@@ -7,6 +7,10 @@ How to run it:
 We believe that you have already python and uv installed. Otherwise, please follow tutorial how to install those on your device.
 
 2. If you running machine with cuda onboard, you can try to install venv with:
-```uv sync --extra cu130```
+```
+uv sync --extra cu130
+```
 otherwise:
-```uv sync --extra cpu```
+```
+uv sync --extra cpu
+```
