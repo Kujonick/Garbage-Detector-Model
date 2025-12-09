@@ -16,6 +16,9 @@ dependencies = [
     "ai_edge_litert",
     "ipykernel>=7.1.0",
     "onnx-graphsurgeon>=0.5.8",
+    "seaborn>=0.13.2",
+    "matplotlib>=3.10.7",
+    "scikit-learn>=1.7.2",
 ]
 requires-python = ">=3.10,<3.11"
 readme = "README.md"
@@ -27,3 +30,25 @@ build-backend = "setuptools.build_meta"
 
 [tool.setuptools.packages]
 find = {include = ["notebooks*"]}
+
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+# Read more here https://beta.ruff.rs/docs/rules/
+# By default, Ruff enables Flake8's E and F rules
+# Pyflakes - F, pycodestyle - E, W
+# flake8-builtins - A
+# Pylint - PLC, PLE, PLW
+# isort - I
+select = ['E', 'F', 'W', 'A', 'PLC', 'PLE', 'PLW', 'I']
+
+[dependency-groups]
+dev = [
+    "notebook>=7.5.0",
+    "pre-commit>=4.5.0",
+    "ruff>=0.14.8",
+]
+
+

@@ -14,3 +14,5 @@ otherwise:
 ```
 uv sync --extra cpu
 ```
+
+Garbage Classification Dataset: https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification/data
