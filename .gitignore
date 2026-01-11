@@ -214,5 +214,6 @@ __marimo__/
 .venv
 __pycache__
 models*
+resources
 
 data/
